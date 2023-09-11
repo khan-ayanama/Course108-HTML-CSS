@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ************ HEADER  **************************** */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0.2)), url('./images/hero.png');
+    height: 95vh;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: grid;
+    place-content: center;
+}
+
+.small-header {
+    font-size: 3rem;
+    text-transform: initial;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 6rem;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+/* *******************  Main Section    ****************** */
+
+.main-header {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 4rem;
+    padding: 1em;
+}
+
+.main-header h1 {
+    font-weight: 500;
+}
+
+.lg-text {
+    font-size: 10rem;
+}
+
+.cards {
+    margin: 5em 0;
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 25%;
+    box-shadow: 0px 0px 5px 1px rgb(112, 110, 110);
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.card-text {
+    font-size: 1.2rem;
+    margin: 0.7em;
+}
+
+.card-text p {
+    padding: 0.5em 0;
+    color: rgb(36, 36, 36);
+}
+
+.card-text h2 {
+    font-weight: 500;
+    border-bottom: 1px solid gray;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.section-info {
+    display: flex;
+}
+
+.section-info h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(77, 36, 36);
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    display: inline-block;
+}
+
+.section-about {
+    background-color: brown;
+    color: white;
+    padding: 4em 2em;
+}
+
+.section-contact {
+    background-color: rgb(40, 51, 0);
+    color: white;
+    padding: 4em 2em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1em;
+}
+
+footer h2 {
+    font-weight: 500;
+}
+
+@media (max-width:850px) {
+    :root {
+        font-size: 55%;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+}
+
+@media (max-width:720px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 60%;
+        margin: 2em;
+    }
+
+    .section-info {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,39 @@
+/* Universal Selector */
+/* 
+* It selects all the elements in html
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+* Universal Selector in Specific Context: Selects all elements within a specific context.
+*/
+
+/* .container * {
+    color: red;
+} */
+
+
+section.first-section * {
+    color: orange;
+    background-color: blue;
+}
+
+*::before {
+    content: 'Hello';
+    display: block;
+    clear: both;
+}
+
+*h1 {
+    color: white;
+    background-color: black;
+}
+
+.container>* p {
+    color: white;
+    background-color: black;
+}
