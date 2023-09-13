@@ -46,9 +46,13 @@ nav>.container {
     display: inline-block;
     margin-right: 1em;
     text-align: center;
-    transition: 0.9s ease-in-out;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease-in-out;
+    cursor: pointer;
+    /* border: 2px solid red; */
 }
 
 .nav-items ul li:hover {
     border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
 }
