@@ -18,8 +18,10 @@ body {
     margin: 0 auto;
 }
 
+/* NAVBAR */
+
 nav {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), rgb(18, 5, 56);
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), rgb(45, 5, 163);
     color: white;
     padding: 1em;
 }
@@ -32,7 +34,7 @@ nav>.container {
 }
 
 .nav-logo {
-    font-size: 3rem;
+    font-size: 2rem;
     /* margin: 0.5em; */
 }
 
@@ -49,10 +51,208 @@ nav>.container {
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.2s ease-in-out;
     cursor: pointer;
-    /* border: 2px solid red; */
 }
 
 .nav-items ul li:hover {
     border-bottom: 2px solid white;
     transition: 0.2s ease-in-out;
+}
+
+/* HEADER */
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/Frame\ 1.png');
+    height: 95vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.header-text {
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+
+.header-text>* {
+    padding: 0.2em 0;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 500;
+}
+
+.header-text h1 {
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+/* Section Music */
+
+.section-music {
+    text-align: center;
+    background-color: rgb(40, 16, 85);
+    color: white;
+    height: 120vh;
+}
+
+.music-text {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.1em 0;
+}
+
+.music-text>* {
+    padding: 0.2em;
+    font-size: 4rem;
+}
+
+.music-text h1::before {
+    content: url('./images/pngwing\ 1.png');
+}
+
+.music-text p {
+    font-size: 2rem;
+    margin-bottom: 2em;
+    font-weight: 200;
+}
+
+.music-text button {
+    font-size: 3rem;
+    background-color: red;
+    color: white;
+    border: transparent;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+
+/* tv */
+
+.section-shows {
+    text-align: center;
+}
+
+.section-shows>* {
+    display: block;
+    /* height: 100vh; */
+
+}
+
+.tv-text {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0.1em 0;
+}
+
+.tv-text>* {
+    padding: 0.2em;
+    font-size: 4rem;
+}
+
+.tv-text p {
+    font-size: 2rem;
+    margin-bottom: 2em;
+    font-weight: 200;
+}
+
+.tv-text button {
+    font-size: 3rem;
+    background-color: rgb(40, 16, 85);
+    color: white;
+    border: transparent;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.tv-shows img {
+    margin-top: -20em;
+}
+
+.macbook {
+    margin-top: 5em;
+}
+
+.entertainment img {
+    width: 100%;
+    margin-top: 5em;
+}
+
+.section-shows::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.gift-cards {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 2em;
+    margin-top: 5em;
+}
+
+.gift-text>* {
+    padding: 0.3em;
+    font-size: 1.8rem;
+}
+
+.gift-text h2 {
+    font-size: 3rem;
+}
+
+.gift-text button {
+    margin-top: 2em;
+    background-color: red;
+    color: white;
+    border: transparent;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+footer {
+    background-color: rgb(40, 16, 85);
+    color: white;
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    /* margin: 4em 0; */
+}
+
+.footer-list {
+    padding: 2em 0;
+}
+
+.footer-lists ul {
+    list-style-type: none;
+}
+
+.footer-list h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    border-bottom: 2px solid white;
+    margin-bottom: 1.5em;
+}
+
+.footer-list li {
+    padding-bottom: 0.5em;
+    color: rgb(219, 212, 212);
+}
+
+.bottom {
+    text-align: center;
+    padding: 2em 0;
+    background-color: rgb(55, 2, 153);
+    color: white;
 }
