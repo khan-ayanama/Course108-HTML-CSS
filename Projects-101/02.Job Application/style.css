@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(173, 171, 171);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 2em;
+    padding: 2.5em;
+    border-radius: 10px;
+}
+
+.header-content{
+    margin-bottom: 1.5em;
+    font-size: 2.5rem;
+}
+
+#sm-text{
+    font-size: 2.3rem;
+    color: rgb(2, 2, 121);
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.form-element{
+    display: inline-block;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+}
+
+label,input,textarea,select{
+    font-size: 2.5rem;
+    margin-bottom: 0.4em;
+}
+
+input,textarea,select{
+    padding: 0.5em;
+}
+
+.address-text{
+    width: 94%;
+}
+
+textarea{
+    height: 5em;
+}
+
+
+@media (max-width:1080px){
+    :root{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:860px){
+    :root{
+        font-size: 45%;
+    }
+}
+
+@media(max-width:700px){
+    form{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .form-element{
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px){
+    :root{
+        font-size: 40%;
+    }
+    .container{
+        width: 95%;
+    }
+}
+
+@media(max-width:380px){
+    .header-content h1{
+        font-size: 4rem;
+    }
+
+    form{
+        width: 100%;
+    }
+    
+    .container{
+        padding: 2.5em 0.2em;
+    }
+}
+
+@media (max-width:275px){
+    :root{
+        font-size: 35%;
+    }
+
+    #sm-text{
+        /* display: hidden; */
+        display: none;
+    }
+}
