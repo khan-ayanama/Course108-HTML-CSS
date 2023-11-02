@@ -1,0 +1,21 @@
+/* FLEX CONTAINER PROPERTIES */
+/* Flex Direction Properties */
+
+/* .class{
+    display: flex;
+    flex-direction: row;    (default) 
+    flex-direction: row-reverse;
+
+    flex-direction: column;
+    flex-direction: column-reverse;
+} */
+
+
+/* FLEX WRAP PROPERTIES (top -> bottom) */
+
+.class-2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+    flex-wrap: nowrap; (default)
+}
