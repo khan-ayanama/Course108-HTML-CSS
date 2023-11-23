@@ -17,5 +17,5 @@
     display: flex;
     flex-wrap: wrap;
     flex-wrap: wrap-reverse;
-    flex-wrap: nowrap; (default)
+    flex-wrap: nowrap;
 }
