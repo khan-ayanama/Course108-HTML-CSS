@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid gray;
+    
+}
+
+.hamburger_icon {
+    height: 4rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    gap: 5em;
+    align-items: center;
+    /* border: 5px solid red; */
+    height: 90vh;
+}
+
+header h3{
+    background-color: green;
+    display: inline-block;
+    color: white;
+    padding: 0.2em 1em;
+    font-weight: 400;
+}
+
+header h1{
+    font-size: 7rem;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+header p{
+    font-weight: 500;
+}
+
+header button{
+    background-color: rgb(255, 102, 0);
+    border: transparent;
+    font-size: 2.5rem;
+    color: white;
+    padding: 0.3em 1em;
+    &:hover{
+        background-color: orange;
+        transition: 0.2s ease-in-out;
+    }
+}
+
+.header-foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    border-bottom: 1px solid gray;
+}
+
+.header-foot-item{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    
+}
+
+.header-foot-item img{
+    height: 100%;
+}
+
+.header-item-foot-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-item-foot-text h3{
+    margin-bottom: -10px;
+    display: inline-block;
+}
+.header-item-foot-text p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
