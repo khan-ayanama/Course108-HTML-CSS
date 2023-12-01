@@ -33,6 +33,5 @@
 `order:` This property allows you to specify the order in which a flex item appears in the flex container. It takes a unitless value, with lower values coming first.
 
 ```css
-Copy code
-order: 2; /* This item will appear second in the flex container */
+    order: 2; /* This item will appear second in the flex container */
 ```
