@@ -74,8 +74,19 @@ This is a shorthand property for setting both flex-direction and flex-wrap in on
 
 `align-content:`
 
-This property aligns a flex container's lines within the flex container when there's extra space in the cross-axis.
-When we use the property wrap and want to align the items vertically we use this property
+The align-content property in Flexbox is used to align the flex container's lines within the flex container when there is extra space on the cross axis. It has an effect when the flex container has multiple lines (rows or columns) of flex items.
+
+Here is an explanation of align-content along with examples:
+
+Basic Usage:
+align-content accepts the following values:
+
+* `flex-start:` Lines are packed at the start of the container.
+* `flex-end:` Lines are packed at the end of the container.
+* `center: Lines` are centered in the container.
+* `space-between:` Lines are evenly distributed; the first line is at the start, and the last line is at the end.
+* `space-around:` Lines are evenly distributed with equal space around each line.
+* `stretch:` Lines stretch to take up the remaining space.
 
 ```css
     .flex-container {
