@@ -1297,3 +1297,149 @@ src: Replace "YOUR_VIDEO_ID" with the actual ID of the YouTube video you want to
 frameborder="0": This attribute removes the border around the iframe.
 allowfullscreen: Allows the video to be viewed in fullscreen mode.
 Make sure to replace "YOUR_VIDEO_ID" with the actual ID of the YouTube video you want to embed.
+
+## SVG
+
+SVG stands for Scalable Vector Graphics. It's an XML-based markup language for describing two-dimensional based vector graphics. SVG is both a powerful and flexible format that's supported by all modern web browsers. It allows for the creation of complex graphics that can be scaled to any size without losing quality, making it ideal for logos, icons, and detailed illustrations for the web and beyond. Here's a breakdown of its key features and benefits:
+
+1. Vector Format
+   Unlike raster images (such as PNG or JPG), which are made up of pixels, SVG graphics are composed of points, lines, and shapes. This means they can be scaled up or down infinitely without any loss of quality or increase in file size.
+2. XML-Based
+   Being XML-based means that SVG files are editable in any text editor and can be searched, indexed, scripted, and compressed. It's possible to manipulate SVG images directly using CSS and JavaScript.
+3. Interactivity and Animation
+   SVG supports interactivity and animation. With the use of SVG, along with CSS and JavaScript, you can create dynamic graphics that respond to user interactions or animate elements within the graphics.
+4. DOM Support
+   SVG elements are part of the Document Object Model (DOM), which means they can be manipulated in the same way as HTML elements using JavaScript. This makes it easy to create interactive web applications with complex graphical components.
+5. Accessibility
+   Since SVG graphics can be created and manipulated through text files and can include text-based descriptions, they are inherently more accessible than raster images. This makes SVG an excellent choice for web content that must meet accessibility standards.
+6. Performance
+   For certain types of graphical representations, SVG files can be more efficient than traditional bitmap images, particularly for smaller icons or graphics where the file size can be significantly less.
+7. Search Engine Optimization (SEO)
+   Texts within SVG graphics are selectable and searchable, which enhances SEO. Search engines can index the content of SVG files, potentially improving the visibility of the graphics in search results.
+8. Applications
+   SVG has a wide range of applications, from simple logos and icons to complex illustrations and interactive data visualizations. It's used in web design, mobile apps, and even in some desktop applications.
+   Creating and Editing SVG
+   SVG graphics can be created with any text editor by coding them directly in SVG format, but that requires knowledge of the SVG markup language. Alternatively, many vector graphic design programs, such as Adobe Illustrator, Inkscape, and Sketch, can output graphics in SVG format. These tools provide a more accessible entry point for designers and those not familiar with coding.
+
+Conclusion
+SVG offers a versatile and efficient way to create high-quality, interactive, and accessible graphics for the web. Its scalability, combined with its ability to be manipulated via CSS and JavaScript, makes it a powerful tool for web designers and developers aiming to create responsive and engaging web experiences.
+
+## HTML Canvas
+
+The HTML `<canvas>` element is used to draw graphics on a web page. Unlike SVG, which is vector-based, `<canvas>` provides a means to render pixel-based graphics via scripting (usually JavaScript). This makes it particularly well-suited for building graphics-intensive applications such as games, image editing tools, and data visualizations that require dynamic, real-time updates.
+
+**Key Features of HTML Canvas:**
+
+1. Pixel Manipulation
+   Direct control over individual pixels allows for complex effects and processing, such as image transformations and filters.
+2. Performance
+   For applications requiring intensive graphics operations, canvas can be faster, especially when dealing with animations or interactive games.
+3. Flexibility
+   It's possible to draw shapes, text, images, and other media. Canvas also supports compositing, image smoothing, and more.
+   How It Works:
+   To use `<canvas>`, you simply include it in your HTML document with a defined width and height:
+
+```html
+<canvas
+  id="myCanvas"
+  width="200"
+  height="100"
+  style="border:1px solid #000000;"
+>
+</canvas>
+```
+
+Basic Example
+
+`Drawing a Rectangle`
+
+```html
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border:1px solid #000000;"
+    >
+      Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+      var canvas = document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(20, 20, 150, 75);
+    </script>
+  </body>
+</html>
+```
+
+In this example, we first obtain a reference to the canvas element using document.getElementById(). We then call getContext("2d") to get the 2D rendering context—the actual tool we use to draw. fillStyle sets the color of the fill, and fillRect() draws a rectangle filled with that color.
+
+Example
+`Drawing a Circle (Arc)`
+To draw a circle or part of a circle, we use the arc() method:
+
+```javascript
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
+
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 \* Math.PI); // Creates a circle
+ctx.stroke();
+```
+
+This script draws a circle centered at (95, 50) with a radius of 40. stroke() outlines the shape.
+
+Example
+`Adding Text`
+You can also add text to your canvas:
+
+```javascript
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+ctx.font = "30px Arial";
+ctx.fillText("Hello, Boss!", 10, 50);
+```
+
+This will render the text "Hello, Boss!" at the position (10, 50) on the canvas.
+
+`Interactive and Animated Graphics`
+Canvas is particularly powerful for interactive and animated graphics. Here's a simple animation example:
+
+```html
+<canvas id="myCanvas" width="480" height="320"></canvas>
+
+<script>
+  var canvas = document.getElementById("myCanvas");
+  var ctx = canvas.getContext("2d");
+  var x = canvas.width / 2;
+  var y = canvas.height - 30;
+  var dx = 2;
+  var dy = -2;
+
+  function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, 10, 0, Math.PI * 2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    x += dx;
+    y += dy;
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+</script>
+```
+
+This code creates a simple animation of a ball bouncing around the canvas area. requestAnimationFrame(animate) is a method that tells the browser to perform an animation and requests that the browser call a specified function to update an animation before the next repaint.
