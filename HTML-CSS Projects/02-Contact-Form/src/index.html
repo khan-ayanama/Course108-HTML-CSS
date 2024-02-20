@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body class="bg-gray-400">
+    <div class="m-auto my-2 max-w-[720px] rounded-md bg-white">
+      <div class="m-auto w-[95%] py-4">
+        <h1 class="py-4 text-3xl font-semibold">
+          Job Application <span class="text-blue-900">(Web)</span>
+        </h1>
+        <div class="flex flex-wrap justify-center font-medium">
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="firstName">First Name</label>
+            <input
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              type="text"
+              name="firstName"
+              id="firstName"
+            />
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="lastName">Last Name</label>
+            <input
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              type="text"
+              name="lastName"
+              id="lastName"
+            />
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="email">Email</label>
+            <input
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              type="email"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="role">Job Role</label>
+            <select
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              name="role"
+              id="role"
+            >
+              <option value="frontend">Frontend</option>
+              <option value="backend">Backend</option>
+              <option value="ui">UI/UX</option>
+              <option value="fullstack">Fullstack</option>
+            </select>
+          </div>
+          <div class="my-2 flex w-full flex-col px-2">
+            <label for="address">Address</label>
+            <textarea
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              name="address"
+              id="address"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="city">City</label>
+            <input
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              type="text"
+              name="city"
+              id="city"
+            />
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="pincode">Pincode</label>
+            <input
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              type="number"
+              name="pincode"
+              id="pincode"
+            />
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="date">Date</label>
+            <input
+              class="my-1 rounded border-2 border-gray-400 px-3 py-1 text-xl font-normal"
+              type="date"
+              name="date"
+              id="date"
+            />
+          </div>
+          <div class="my-2 flex w-6/12 flex-col px-2">
+            <label for="file">Upload Resume</label>
+            <input
+              class="my-1 px-3 py-1 text-xl font-normal"
+              type="file"
+              name="file"
+              id="file"
+            />
+          </div>
+          <div class="mt-1 w-full text-end text-xl font-normal">
+            <button
+              class="rounded bg-red-600 px-3 py-2 text-white"
+              type="submit"
+            >
+              Apply Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

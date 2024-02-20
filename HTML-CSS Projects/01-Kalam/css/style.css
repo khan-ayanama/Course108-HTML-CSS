@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 80%;
+  border: 10px solid #1d1e4c;
+  background-color: #e5e5e5;
+  padding: 5em 4em;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-text h1 {
+  font-size: 5rem;
+  text-wrap: nowrap;
+}
+
+.header-text h2 {
+  text-align: end;
+}
+
+.main-heading h1 {
+  font-size: 6.2rem;
+  padding: 0.2em 0;
+}
+
+main {
+  font-size: 1.6rem;
+  line-height: 1.4em;
+  letter-spacing: 0.1em;
+}
+
+article {
+  padding: 2em 0;
+}
+
+main h2 {
+  padding: 0.5em 0;
+}
+
+main ul li {
+  list-style-position: inside;
+}
+
+footer {
+  text-align: end;
+  margin-top: 2em;
+}
+
+footer a {
+  color: red;
+  transition: 0.2s ease-in-out;
+}
+footer a:hover {
+  transition: 0.2s ease-in-out;
+  box-shadow: 0px 0px 15px 5px rgb(206, 204, 204);
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+  header {
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  .header-text h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 90%;
+  }
+  .main-heading h1 {
+    text-align: center;
+    line-height: 0.8em;
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 95%;
+    padding: 20px;
+  }
+  .main-heading h1 {
+    font-size: 4rem;
+  }
+
+  .header-text h1 {
+    font-size: 4rem;
+  }
+}
